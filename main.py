@@ -64,25 +64,3 @@ ax.grid(True, linestyle='--', which='both', color='gray', alpha=0.7) # Созд�
 
 
 st.pyplot(fig)
-
-"2 Detailed overview"
-data['PeopleNumber'] = data.apply(lambda x: 2 + x["Children"] if x["Marital Status"] == "Married" else 1+ x["Children"], axis=1)
-data["Income per person"] = data.apply(lambda x: x["Income"] / x["PeopleNumber"], axis=1)
-import random
-def rep(x):
-  if not(isinstance(x,str)):
-    return x
-  if "Miles" in x:
-    x = x.replace("Miles", "")
-  x=x.replace("+","")
-  x=x.split("-")
-  if len(x)==1:
-    return int(x[0])
-  else:
-    return  random.random() + random.randint(int(x[0]), int(x[1])-1)
-    # return (int(x[0])+int(x[1]))/2
-
-data["2Commute Distance"] = data["Commute Distance"].apply(rep)
-data.plot.scatter(x = 'Income per person', y = "2Commute Distance", s = 10, c = data['Purchased Bike'].apply(lambda x: 'magenta' if x == "Yes" else 'mediumblue'))
-
-st.pyplot(fig)
