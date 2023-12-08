@@ -5,7 +5,7 @@ Project was created by Nikitina Ekaterina
 ## Group DSBA231-1
 
 ### Link to the project
-[[https://projectofcarprices-6dxgaarb9tgumjhp2eeyey.streamlit.app](https://projectofcarprices-6dxgaarb9tgumjhp2eeyey.streamlit.app)](https://zazazaza.streamlit.app) - Streamlit <br>
+(https://zazazaza.streamlit.app) - Streamlit <br>
  - Flask
 
 ### Data set: 
