@@ -6,7 +6,7 @@ Project was created by Nikitina Ekaterina
 
 ### Link to the project
 (https://zazazaza.streamlit.app) - Streamlit <br>
- https://kate.oldi.dev/ - Flask
+ (https://kate.oldi.dev/) - Flask
 
 ### Data set: 
 https://www.kaggle.com/datasets/heeraldedhia/bike-buyers/
