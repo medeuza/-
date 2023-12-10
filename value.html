@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fce8ea; /* Розовый фон */
+            color: #333; /* Темный текст */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ff6b81; /* Розовый цвет для header */
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff; /* Белый текст для ссылок в header */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .box {
+            width: 70%;
+            padding: 20px;
+            background-color: #ffffff; /* Белый цвет для контейнера */
+            border-radius: 15px; /* Круглая форма контейнера */
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd; /* Светлая рамка вокруг textarea */
+            border-radius: 5px;
+            resize: none; /* Запрет на изменение размера textarea */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd; /* Светлая рамка вокруг input */
+            border-radius: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #ff6b81; /* Розовый цвет для кнопки */
+            color: #fff; /* Белый текст для кнопки */
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .result-container {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1; /* Светло-серый цвет для контейнера результата */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff6b81; /* Розовый цвет для footer */
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Закрепление footer внизу */
+        }
+img {
+    width: 80%;
+}
+    </style>
+    <title>Красивый дизайн</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="home">Home</a>
+        <a href="value">Value</a>
+        <a href="#">Else</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="box">
+        <h2>Statistical Graphs</h2>
+        <form method="post">
+            <input type="text" name="www" placeholder="text_here">
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="result-container" id="resultContainer">
+            {% if result== '1' %}
+                <img src='static/1.png'>
+            {% elif result== '2' %}
+                <img src='static/2.png'>
+            {% elif result== '3' %}
+                <img src='static/88.png'>
+            {% else %}
+             <p> Choose one from: 1,2,3!</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+    <p>Nikitina Katya</p>
+</footer>
+</body>
+</html>

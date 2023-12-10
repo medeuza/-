@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fce8ea; /* Розовый фон */
+            color: #fff; /* Белый текст */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ff6b81; /* Розовый цвет для header */
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff; /* Белый текст для ссылок в header */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container .box {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #ffffff; /* Белый цвет для контейнеров */
+            border-radius: 15px; /* Круглая форма контейнеров */
+            text-align: center;
+        }
+
+        .box p {
+            margin-top: 10px;
+            color: #333; /* Цвет текста в контейнерах */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #ff6b81; /* Розовый цвет для кнопки */
+            color: #fff; /* Белый текст для кнопки */
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        footer {
+            background-color: #ff6b81; /* Розовый цвет для footer */
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Закрепление footer внизу */
+        }
+    </style>
+    <title>Красивый дизайн</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home">Home</a>
+            <a href="value">Value</a>
+            <a href="check">Else</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>Заголовок 1</h2>
+            <p> ГИТХАБ <span class="icon">🌟</span></p>
+            <a href="https://github.com/medeuza/-" class="button">Кнопка 1</a>
+        </div>
+
+        <div class="box">
+            <h2>Заголовок 2</h2>
+            <p> СТРИМЛИТ <span class="icon">🚀</span></p>
+            <a href="https://zazazaza.streamlit.app" class="button">Кнопка 2</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Nikitina Katya</p>
+    </footer>
+</body>
+</html>
